@@ -1,0 +1,18 @@
+[project]
+name = "rayt"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "pyyaml>=6.0.3",
+    "qrcode>=8.2",
+    "textual>=8.2.3",
+]
+
+[project.scripts]
+rayt = "rayt:main"
+
+[build-system]
+requires = ["uv_build>=0.9.13,<0.10.0"]
+build-backend = "uv_build"
